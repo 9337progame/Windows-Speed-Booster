@@ -1,4 +1,4 @@
-# Windows Speed Booster V12 - Ultimate Renewed Edition
+# Windows Speed Booster V12
 
 Windows Speed Booster is a comprehensive automation utility designed to streamline system maintenance and maximize hardware potential. This utility integrates deep cleaning protocols, advanced registry tweaks, and professional diagnostic tools into a centralized interface. By automating complex tasks such as TCP/IP stack resets and kernel-level optimizations, it provides a powerful solution for enhancing the Windows computing experience.
 
