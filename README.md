@@ -1,4 +1,4 @@
-# Windows Speed Booster V12
+# Windows Speed Booster V13
 
 Windows Speed Booster is a comprehensive automation utility designed to streamline system maintenance and maximize hardware potential. This utility integrates deep cleaning protocols, advanced registry tweaks, and professional diagnostic tools into a centralized interface. By automating complex tasks such as TCP/IP stack resets and kernel-level optimizations, it provides a powerful solution for enhancing the Windows computing experience.
 
@@ -34,7 +34,7 @@ The renewed version features a completely integrated **AI Terminal Assistant** t
 
 1.  Download the latest `WindowsSpeedBooster.zip` from the **Releases** section.
 2.  **Extract the entire ZIP folder** to a location of your choice.
-3.  Right-click the `Windows_Speed_Booster.bat` file and select **Run as Administrator**.
+3.  Right-click the `Windows_ Speed_ Booster.bat` file and select **Run as Administrator**.
 4.  Follow the interactive menu to apply your desired optimizations.
 5.  **Restart your computer** after applying significant changes for the best results.
 
