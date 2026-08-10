@@ -1,0 +1,41 @@
+name: Build Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    name: Create Release ZIP
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create ZIP file
+        shell: pwsh
+        run: |
+          # Create a temporary directory for the release
+          $releaseDir = "WindowsSpeedBooster"
+          New-Item -ItemType Directory -Path $releaseDir -Force
+          
+          # Copy all files from src/ to the release directory
+          Copy-Item -Path "src\*" -Destination $releaseDir -Recurse -Force
+          
+          # Create ZIP file
+          Compress-Archive -Path "$releaseDir\*" -DestinationPath "WindowsSpeedBooster.zip" -Force
+          
+          # Verify ZIP was created
+          if (Test-Path "WindowsSpeedBooster.zip") {
+            Write-Host "✅ ZIP file created successfully" -ForegroundColor Green
+          } else {
+            Write-Host "❌ Failed to create ZIP file" -ForegroundColor Red
+            exit 1
+          }
+
+      - name: Upload Release Asset
+        uses: actions/upload-artifact@v4
+        with:
+          name: WindowsSpeedBooster
+          path: WindowsSpeedBooster.zip

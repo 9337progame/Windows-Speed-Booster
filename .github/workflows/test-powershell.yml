@@ -1,0 +1,31 @@
+name: Test PowerShell Scripts
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-powershell:
+    name: Test PowerShell Syntax
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Test PowerShell syntax
+        shell: pwsh
+        run: |
+          # Test syntax for all .ps1 files
+          Get-ChildItem -Path . -Recurse -Filter "*.ps1" | ForEach-Object {
+            Write-Host "Testing: $($_.FullName)"
+            try {
+              $scriptContent = Get-Content -Path $_.FullName -Raw
+              [System.Management.Automation.Language.Parser]::ParseInput($scriptContent, [ref]$null, [ref]$null) | Out-Null
+              Write-Host "✅ $($_.Name) - Syntax OK" -ForegroundColor Green
+            } catch {
+              Write-Host "❌ $($_.Name) - Syntax Error: $_" -ForegroundColor Red
+              exit 1
+            }
+          }
