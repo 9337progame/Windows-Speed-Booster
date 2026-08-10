@@ -1,0 +1,23 @@
+# Log
+*.log
+
+# Backup
+*.bak
+
+# Temp
+temp/
+*.tmp
+
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build/output
+build/
+dist/
+*.exe
