@@ -1,7 +1,9 @@
 [ITALIANO]
-IMPORTANTE: Per far funzionare correttamente tutti gli script, devi eseguire il file "Windows_ Speed_ Booster.bat" come AMMINISTRATORE.
+IMPORTANTE: Estrai l'intero archivio e avvia il file "Windows_ Speed_ Booster.exe" come AMMINISTRATORE.
 (Tasto destro sul file -> Esegui come amministratore)
+Richiede Microsoft .NET Framework 4.0 o successivo.
 
 [ENGLISH]
-IMPORTANT: To ensure all scripts work correctly, you must run "Windows_ Speed_ Booster.bat" as ADMINISTRATOR.
-(Right-click on the file -> Run as administrator)
+IMPORTANT: Extract the entire archive and run "Windows_ Speed_ Booster.exe" as ADMINISTRATOR.
+(Right-click the file -> Run as administrator)
+Requires Microsoft .NET Framework 4.0 or later.

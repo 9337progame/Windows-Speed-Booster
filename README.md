@@ -1,4 +1,4 @@
-# Windows Speed Booster V14
+# Windows Speed Booster V14 GUI
 
 Windows Speed Booster is a comprehensive automation utility designed to streamline system maintenance and maximize hardware potential. This utility integrates deep cleaning protocols, advanced registry tweaks, and professional diagnostic tools into a centralized interface. By automating complex tasks such as TCP/IP stack resets and kernel-level optimizations, it provides a powerful solution for enhancing the Windows computing experience.
 
@@ -16,6 +16,7 @@ The latest version has been optimized to minimize external dependencies. The int
 | :--- | :--- |
 | **Privileges** | Must be executed with full **Administrator** rights (Right-click > Run as Administrator). |
 | **Operating System** | Compatible with Windows 10 and Windows 11. |
+| **.NET Framework** | **Microsoft .NET Framework 4.0 or later** is required to run the GUI executable; version 4.8 is recommended. |
 | **Distribution** | Distributed as a **.zip** archive. All files must be extracted before execution. |
 | **Connectivity** | Internet access is required for the AI Assistant and MAS integration. |
 
